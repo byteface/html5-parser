@@ -4,11 +4,12 @@
 
 from __future__ import absolute_import, division, print_function, unicode_literals
 
-from xml.dom.minidom import getDOMImplementation
+from domonic.dom import DOMImplementation
 
 from lxml.etree import _Comment
 
-impl = getDOMImplementation()
+
+impl = DOMImplementation()
 
 try:
     dict_items = dict.iteritems
